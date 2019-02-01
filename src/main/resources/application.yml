@@ -1,0 +1,7 @@
+spring:
+  redis:
+    host: ${REDIS_REPL_HOST:127.0.0.1}
+    port: ${REDIS_REPL_PORT:6379}
+    sentinel:
+      master: ${REDIS_REPL_NAME:mymaster}
+      nodes: ${REDIS_REPL_NODES:127.0.0.1:26379}
